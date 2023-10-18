@@ -1,0 +1,186 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+
+body {
+    background: rgb(171, 196, 206);
+}
+
+  /* Style the navigation bar */
+  .navbar {
+    background: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 3.5rem .8rem 2rem;
+    border-radius: 0 0 1rem 1rem ;
+  }
+
+  .navbar a {
+    color: white;
+    transition: 1ms;
+  }
+
+  .navbar a:hover {
+    color: yellow;
+    /* font-size: 1.5rem; */
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .menu {
+    list-style: none;
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Style the content section */
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    background: rgb(171, 196, 206);
+    padding: 3rem;    
+    height: 36rem;
+    box-shadow: 3px 3px 5px black;
+    
+  }
+  
+  .train-image {
+    background: url('img/hell.jpg') no-repeat center;
+    background-size: cover;
+    width: 50%;
+    border-radius: 0 1rem 1rem 0;
+    /* min-height: 100vh; */
+  }
+  
+  .login-section {
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .form {
+    /* border-radius: 1rem; */
+    width: 70%;
+    height: 21.8rem;
+    /* background-color: red; */
+    padding: 2rem;
+    border: 5px solid navy;
+    border-radius: 1rem;
+  }
+
+
+  h1 {
+    font-size: 24px;
+  }
+  
+  .input-field {
+    width: 96%;
+    padding: .5rem 0 .5rem .8rem ;
+    margin: 10px 0; 
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    background: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+    border: 2px solid black;
+  }
+  
+  .heading {
+    align-items: center;
+    font-size: 2.8rem;
+    color: navy;
+    margin-bottom: 1rem;
+  }
+
+
+  .login-button:hover {
+    background: rgb(59, 59, 224);
+  }
+  
+  .social-login a {
+    display: block;
+    /* margin: 1.2rem 0; */
+    margin-top: .4rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: navy;
+    transition: 0ms;
+    padding: .5rem;
+    border: 2px solid white;
+  }
+
+  .social-login a:hover {
+    border: 2px solid black;
+    border-radius: .3rem;
+  }
+
+  nav .hide {
+    display: none;
+  }
+  
+  .social-login {
+    margin-top: 1.5rem;
+  }
+
+  .social-login p {
+    font-weight: 200;
+  }
+
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .train-image {
+      display: none;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .login-section {
+      width: 80%;
+    }
+  }
+
+  @media  (max-width: 626px) {
+    .menu {
+      display: none;
+    }
+    nav .hide {
+      display: inline-block;
+    }
+  }
+  
