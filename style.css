@@ -1,107 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-  }
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-  body {
-    background: rgb(171, 196, 206);
+body {
+  background: rgb(171, 196, 206);
 }
 
 
-   /* navbar */
+ /* navbar */
 
 .navbar {
-    background: navy;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8rem 3.5rem .8rem 2rem;
-    border-radius: 0 0 1rem 1rem ;
-  }
+  background: navy;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 3.5rem .8rem 2rem;
+  border-radius: 0 0 1rem 1rem ;
+}
 
-  .navbar a {
-    color: white;
-    transition: 1ms;
-  }
+.navbar a {
+  color: white;
+  transition: 1ms;
+}
 
-  .navbar a:hover {
-    color: yellow;
-    /* font-size: 1.5rem; */
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
+.navbar a:hover {
+  color: yellow;
+  /* font-size: 1.5rem; */
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+nav .hide {
+  display: none;
+}
+@media  (max-width: 626px) {
   .menu {
-    list-style: none;
-  }
-  
-  .menu li {
-    display: inline;
-    margin-right: 3rem;
-    font-size: 1.2rem;
-  }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-
-  nav .hide {
     display: none;
   }
-  @media  (max-width: 626px) {
-    .menu {
-      display: none;
-    }
-    nav .hide {
-      display: inline-block;
-    }
+  nav .hide {
+    display: inline-block;
   }
+}
 
-      /* content */
+    /* content */
 
 
 
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: skyblue;
-      }
-      
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: skyblue;
+    }
     
-      
-      
+  
+    .train-name {
+      padding: 0 5rem;
+      text-align: start;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .header h1 {
+        font-size: 20px;
+      }
       .content {
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
+        font-size: 14px;
       }
-      
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-      
-      @media screen and (max-width: 768px) {
-        .header h1 {
-          font-size: 20px;
-        }
-        .content {
-          font-size: 14px;
-        }
-      }
-      
+    }
+
+    
