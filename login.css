@@ -1,62 +1,95 @@
-/* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-  }
-
-body {
-    background: rgb(171, 196, 206);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  /* Style the navigation bar */
-  .navbar {
-    background: navy;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8rem 3.5rem .8rem 2rem;
-    border-radius: 0 0 1rem 1rem ;
-  }
+body {
+  font-family: Arial, sans-serif;
+}
+.content {
+  width: 100% !important;  
+}
 
-  .navbar a {
-    color: white;
-    transition: 1ms;
-  }
+.navbar {
+  background: #3aa0ff;
+  color: white;
+  padding: 1rem 0;
+}
 
-  .navbar a:hover {
-    color: yellow;
-    /* font-size: 1.5rem; */
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
+.container {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  margin-right: 1.5rem;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
   .menu {
-    list-style: none;
+      display: none;
   }
-  
-  .menu li {
-    display: inline;
-    margin-right: 3rem;
-    font-size: 1.2rem;
+
+  .mobile-menu {
+      display: flex;
   }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
+}
+
+
+
+
+
+
+
+
+
   
   /* Style the content section */
   .content {
     display: flex;
     flex-direction: row-reverse;
     /* justify-content: center; */
-    background: rgb(171, 196, 206);
+    background: white;
     padding: 3rem;    
-    height: 36rem;
+    height: 45rem;
     /* box-shadow: 3px 3px 5px black; */
     
   }
@@ -74,21 +107,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
-    padding: 2rem;
-    width: 50%;
+    background: #3aa0ff;
+    padding: 2rem 0;
+    width: 70%;
+    
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   }
   
 
   .form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
     /* border-radius: 1rem; */
     width: 70%;
-    height: 21.8rem;
+    height: 30rem;
     /* background-color: red; */
     padding: 2rem;
-    border: 5px solid navy;
-    border-radius: 1rem;
+    border: 5px solid #0a3966;
+    border-radius: .5rem;
   }
 
 
@@ -168,6 +206,7 @@ body {
     .content {
       flex-direction: column;
       align-items: center;
+      padding: 2rem 0;
     }
   
     .login-section {
