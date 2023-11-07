@@ -132,19 +132,24 @@ body {
   font-weight: 700;
 }
 
-#btn {
+#trainChoiceBtn {
   transition: 0ms;
   font-size: larger;
   color: white;
   font-weight: 600;
   background-color: #3aa0ff;
-  margin-top: 3rem;
-  width: 18%;
-  padding: .5rem 1rem;
+  margin-top: 1rem;
+  /* width: 18%; */
+  padding: .5rem 2rem;
   border-radius: .6rem;
 }
 
-#btn:hover {
+#trainChoice {
+  padding: .6rem 1rem;
+  border-radius: .35rem;
+}
+
+#trainChoiceBtn:hover {
   background-color: #f2f2f2;
   color: black;
 }
