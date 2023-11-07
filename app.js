@@ -5,7 +5,19 @@ let jsfrom = document.querySelector(".jsfrom");
 let jsto = document.querySelector(".jsto");
 
 
-btn.addEventListener("click", async () => {
+let trainChoice = document.querySelector("#trainChoice");
+let trainChoiceForm = document.querySelector("#trainChoiceForm");
+let userTrainChoice;
+
+// trainChoiceForm.addEventListener("submit", function (event) {
+//     event.preventDefault();
+    // ch = trainChoice.value;
+//     console.log(ch);
+
+// });
+
+trainChoiceForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
     const url = 'https://trains.p.rapidapi.com/';
     const options = {
         method: 'POST',
@@ -14,7 +26,7 @@ btn.addEventListener("click", async () => {
             'X-RapidAPI-Key': '57c1c13a5fmshc16294b1f5b318fp1e9442jsnb04442ccd003',
             'X-RapidAPI-Host': 'trains.p.rapidapi.com'
         },
-        body: JSON.stringify({ search: 'Rajdhani'}) // Stringify the body
+        body: JSON.stringify({ search: trainChoice.value}) // Stringify the body
     };
 
     try {
