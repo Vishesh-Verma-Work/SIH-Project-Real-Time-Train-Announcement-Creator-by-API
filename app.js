@@ -7,7 +7,7 @@ let jsto = document.querySelector(".jsto");
 
 let trainChoice = document.querySelector("#trainChoice");
 let trainChoiceForm = document.querySelector("#trainChoiceForm");
-let userTrainChoice;
+let MainTable = document.querySelector("#mainTable");
 
 // trainChoiceForm.addEventListener("submit", function (event) {
 //     event.preventDefault();
@@ -30,7 +30,10 @@ trainChoiceForm.addEventListener("submit", async (event) => {
     };
 
     try {
-        // console.log("Not working :(");
+        
+        MainTable.style.display = "flex";
+        
+
         const response = await fetch(url, options);
 
         const result = await response.json();
